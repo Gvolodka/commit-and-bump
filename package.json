@@ -1,0 +1,27 @@
+{
+  "name": "commit-and-bump",
+  "version": "1.1.0",
+  "description": "Automatically increases the package version and makes a commit via a dialog in the cli",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "commitAndBump": "./index.js"
+  },
+  "bin": {
+    "commitAndBump": "./index.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "dependencies": {
+    "commitizen": "4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "cz-customizable": "6.3.0",
+    "standard-version": "9.3.2"
+  }
+}
